@@ -2,6 +2,7 @@ package net.mavity.the_legend_of_wiiu.itemregister;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.mavity.the_legend_of_wiiu.TheLegendOfWiiU;
+import net.mavity.the_legend_of_wiiu.blockregister.BlockInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -23,6 +24,12 @@ public class TLOWCreativeModeTabs {
                         entries.add(ItemInit.SILVER_RUPEE);
                         entries.add(ItemInit.GOLD_RUPEE);
                     }).build());
+    public static final ItemGroup TLOW_BLOCKS = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TheLegendOfWiiU.MOD_ID, "tlow_blocks"),
+            FabricItemGroup.builder().displayName(Text.translatable("tab.the_legend_of_wiiu.tlow_blocks"))
+                    .icon(() -> new ItemStack(BlockInit.EXAMPLE_BLOCK)).entries((displayContext, entries) -> {
+                        entries.add(BlockInit.EXAMPLE_BLOCK);
+                    }).noScrollbar().build());
 
     public static void registerItemGroups() {
         TheLegendOfWiiU.LOGGER.info("Registering Creative Mode tabs for The Legend Of WiiU");
