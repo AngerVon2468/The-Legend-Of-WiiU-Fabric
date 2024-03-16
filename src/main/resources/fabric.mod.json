@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "the_legend_of_wiiu",
+	"version": "${version}",
+	"name": "The Legend Of WiiU",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Mavity The Madity"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "Apache License Version 2.0",
+	"icon": "assets/the_legend_of_wiiu/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mavity.the_legend_of_wiiu.TheLegendOfWiiU"
+		],
+		"fabric-datagen": [
+			"net.mavity.the_legend_of_wiiu.TheLegendOfWiiUDataGenerator"
+		]
+	},
+	"mixins": [
+		"the_legend_of_wiiu.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
