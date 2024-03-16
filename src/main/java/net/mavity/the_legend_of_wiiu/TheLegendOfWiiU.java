@@ -2,6 +2,7 @@ package net.mavity.the_legend_of_wiiu;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mavity.the_legend_of_wiiu.blockregister.BlockInit;
 import net.mavity.the_legend_of_wiiu.itemregister.ItemInit;
 import net.mavity.the_legend_of_wiiu.itemregister.TLOWCreativeModeTabs;
 import org.slf4j.Logger;
@@ -23,5 +24,6 @@ public class TheLegendOfWiiU implements ModInitializer {
 		LOGGER.info("Initializing " + TheLegendOfWiiU.MOD_ID);
 		ItemInit.registerItemInit();
 		TLOWCreativeModeTabs.registerItemGroups();
+		BlockInit.registerBlockInit();
 	}
 }
