@@ -14,6 +14,8 @@ public class BlockInit {
     //testing to see if I can register a block or not
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
             new Block(FabricBlockSettings.create().noCollision().notSolid()));
+    public static final Block PED_WITH_MS = registerBlock("ped_with_ms",
+            new Block(FabricBlockSettings.create().nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
