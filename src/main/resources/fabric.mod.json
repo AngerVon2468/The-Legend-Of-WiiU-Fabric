@@ -3,20 +3,23 @@
 	"id": "the_legend_of_wiiu",
 	"version": "${version}",
 	"name": "The Legend Of WiiU",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Fabric port of The Legend Of WiiU",
 	"authors": [
 		"Mavity The Madity"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/the-legend-of-wiiu",
+		"sources": "https://github.com/AngerVon2468/The-Legend-Of-WiiU-Fabric"
 	},
 	"license": "Apache License Version 2.0",
-	"icon": "assets/the_legend_of_wiiu/icon.png",
+	"icon": "assets/the_legend_of_wiiu/pack.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.mavity.the_legend_of_wiiu.TheLegendOfWiiU"
+		],
+		"client": [
+			"net.mavity.the_legend_of_wiiu.TheLegendOfWiiUClient"
 		],
 		"fabric-datagen": [
 			"net.mavity.the_legend_of_wiiu.TheLegendOfWiiUDataGenerator"
