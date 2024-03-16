@@ -2,6 +2,7 @@ package net.mavity.the_legend_of_wiiu;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mavity.the_legend_of_wiiu.itemregister.ItemInit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,5 +20,6 @@ public class TheLegendOfWiiU implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ItemInit.registerItemInit();
 	}
 }
