@@ -195,12 +195,12 @@
 			"scale": [1.25, 1.25, 1.25]
 		},
 		"firstperson_righthand": {
-			"rotation": [-6, 90, 0],
-			"translation": [0, 5.75, 0.5]
+			"rotation": [6, 90, 0],
+			"translation": [0, 5.75, -0.5]
 		},
 		"firstperson_lefthand": {
-			"rotation": [-6, -90, 0],
-			"translation": [0, 5.75, 0]
+			"rotation": [6, -90, 0],
+			"translation": [0, 5.75, -0.5]
 		},
 		"ground": {
 			"translation": [3.5, 9, 0]
