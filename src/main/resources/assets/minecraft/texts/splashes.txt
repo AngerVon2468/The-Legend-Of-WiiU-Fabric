@@ -21,10 +21,10 @@ package net.mavity.monkey;
 If you say lol in caps it hurts me
 IdeallyKafei literally doesn't pay their taxes lmfao
 My rabbit is being so cute that it is distracting me
-System.out.prntln("WiiU");
-System.out.prntln("The Master Swood");
-System.out.prntln("I'm sorry, you did what to the triforce!?");
-System.out.prntln("I JUST WANT TO SCREAM IN YOUR EAR!");
+System.out.println("WiiU");
+System.out.println("The Master Swood");
+System.out.println("I'm sorry, you did what to the triforce!?");
+System.out.println("I JUST WANT TO SCREAM IN YOUR EAR!");
 Put something here at some point?
 IT WAS A PLACEHOLDER /j
 Oh? What's this, a WiiU >:)
