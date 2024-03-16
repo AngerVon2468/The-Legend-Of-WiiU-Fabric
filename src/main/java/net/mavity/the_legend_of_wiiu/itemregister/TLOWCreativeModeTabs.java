@@ -41,6 +41,7 @@ public class TLOWCreativeModeTabs {
             FabricItemGroup.builder().displayName(Text.translatable("tab.the_legend_of_wiiu.tlow_blocks"))
                     .icon(() -> new ItemStack(BlockInit.EXAMPLE_BLOCK)).entries((displayContext, entries) -> {
                         entries.add(BlockInit.EXAMPLE_BLOCK);
+                        entries.add(BlockInit.PED_WITH_MS);
                     }).noScrollbar().build());
 
     public static void registerItemGroups() {

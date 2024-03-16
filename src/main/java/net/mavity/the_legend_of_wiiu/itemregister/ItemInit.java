@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.mavity.the_legend_of_wiiu.TheLegendOfWiiU;
+import net.mavity.the_legend_of_wiiu.blockregister.BlockInit;
 import net.mavity.the_legend_of_wiiu.propertymanager.TLOWProperties;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -29,6 +30,10 @@ public class ItemInit {
         entries.add(THE_MASTER_SWORD);
         entries.add(THE_AWAKENED_MASTER_SWORD);
     }
+    private static void addBuildingBlocksTabMethod(FabricItemGroupEntries entries) {
+        entries.add(BlockInit.EXAMPLE_BLOCK);
+        entries.add(BlockInit.PED_WITH_MS);
+    }
 
     public static final Item GREEN_RUPEE = registerItem("green_rupee", new Item(TLOWProperties.RUPEETYPE));
     public static final Item BLUE_RUPEE = registerItem("blue_rupee", new Item(TLOWProperties.RUPEETYPE));
@@ -50,5 +55,6 @@ public class ItemInit {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ItemInit::addToTabMethod);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ItemInit::addCombatTabMethod);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ItemInit::addBuildingBlocksTabMethod);
     }
 }
