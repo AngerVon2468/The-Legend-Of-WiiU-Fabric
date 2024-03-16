@@ -18,6 +18,12 @@ public class ItemInit {
 
     private static void addToTabMethod(FabricItemGroupEntries entries) {
         entries.add(GREEN_RUPEE);
+        entries.add(BLUE_RUPEE);
+        entries.add(YELLOW_RUPEE);
+        entries.add(RED_RUPEE);
+        entries.add(PURPLE_RUPEE);
+        entries.add(SILVER_RUPEE);
+        entries.add(GOLD_RUPEE);
     }
 
     public static final Item GREEN_RUPEE = registerItem("green_rupee", new Item(TLOWProperties.RUPEETYPE));
