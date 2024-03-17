@@ -51,7 +51,7 @@ public class ItemInit {
             new SwordItem(ToolMaterials.DIAMOND, 14, -2.4f, new FabricItemSettings().maxDamage(1024)));
     public static final Item MAJORAS_MASK = registerItem("majoras_mask", new Item(new FabricItemSettings().maxDamage(0).maxCount(1)));
     public static void registerItemInit() {
-        TheLegendOfWiiU.LOGGER.info("Registering Items for TLOW (" + TheLegendOfWiiU.MOD_ID + ")");
+        TheLegendOfWiiU.LOGGER.info(TheLegendOfWiiU.MOD_ID + " has registered its' items.");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ItemInit::addToTabMethod);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ItemInit::addCombatTabMethod);

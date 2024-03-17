@@ -45,6 +45,6 @@ public class TLOWCreativeModeTabs {
                     }).noScrollbar().build());
 
     public static void registerItemGroups() {
-        TheLegendOfWiiU.LOGGER.info("Registering Creative Mode tabs for The Legend Of WiiU");
+        TheLegendOfWiiU.LOGGER.info(TheLegendOfWiiU.MOD_ID + " has registered its' Creative Mode Tabs.");
     }
 }

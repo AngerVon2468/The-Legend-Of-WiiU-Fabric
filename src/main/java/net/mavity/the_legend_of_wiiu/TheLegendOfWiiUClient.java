@@ -7,4 +7,7 @@ public class TheLegendOfWiiUClient implements ClientModInitializer {
     public void onInitializeClient() {
 
     }
+    public static void registerTLOWClient() {
+        TheLegendOfWiiU.LOGGER.info(TheLegendOfWiiU.MOD_ID + " has registered its' Client.");
+    }
 }

@@ -8,4 +8,7 @@ public class TheLegendOfWiiUDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 
 	}
+	public static void registerTLOWDataGen() {
+		TheLegendOfWiiU.LOGGER.info(TheLegendOfWiiU.MOD_ID + " has registered its' Data Generator.");
+	}
 }

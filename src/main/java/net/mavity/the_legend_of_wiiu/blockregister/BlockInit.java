@@ -3,6 +3,7 @@ package net.mavity.the_legend_of_wiiu.blockregister;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.mavity.the_legend_of_wiiu.TheLegendOfWiiU;
+import net.mavity.the_legend_of_wiiu.blockregister.blocktyperegister.CrashType;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,7 +14,7 @@ import net.minecraft.util.Identifier;
 public class BlockInit {
     //testing to see if I can register a block or not
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
-            new Block(FabricBlockSettings.create().noCollision().notSolid()));
+            new CrashType(FabricBlockSettings.create().noCollision().notSolid()));
     public static final Block PED_WITH_MS = registerBlock("ped_with_ms",
             new Block(FabricBlockSettings.create().nonOpaque()));
 
@@ -28,6 +29,6 @@ public class BlockInit {
     }
 
     public static void registerBlockInit() {
-        TheLegendOfWiiU.LOGGER.info("Registering Blocks for TLOW (" + TheLegendOfWiiU.MOD_ID + ")");
+        TheLegendOfWiiU.LOGGER.info(TheLegendOfWiiU.MOD_ID + " has registered its' blocks.");
     }
 }
