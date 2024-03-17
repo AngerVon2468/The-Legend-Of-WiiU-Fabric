@@ -1,8 +1,9 @@
-package net.mavity.the_legend_of_wiiu.itemregister;
+package net.mavity.the_legend_of_wiiu.other;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.mavity.the_legend_of_wiiu.TheLegendOfWiiU;
 import net.mavity.the_legend_of_wiiu.blockregister.BlockInit;
+import net.mavity.the_legend_of_wiiu.itemregister.ItemInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;;
 import net.minecraft.registry.Registries;

@@ -5,7 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.mavity.the_legend_of_wiiu.blockregister.BlockInit;
 import net.mavity.the_legend_of_wiiu.blockregister.blocktyperegister.CrashType;
 import net.mavity.the_legend_of_wiiu.itemregister.ItemInit;
-import net.mavity.the_legend_of_wiiu.itemregister.TLOWCreativeModeTabs;
+import net.mavity.the_legend_of_wiiu.other.TLOWCreativeModeTabs;
 import net.mavity.the_legend_of_wiiu.propertymanager.TLOWProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
