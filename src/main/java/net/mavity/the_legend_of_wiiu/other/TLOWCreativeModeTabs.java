@@ -19,7 +19,7 @@ public class TLOWCreativeModeTabs {
                         entries.add(ItemInit.ROYAL_GUARDS_SWORD);
                         entries.add(ItemInit.THE_MASTER_SWORD);
                         entries.add(ItemInit.THE_AWAKENED_MASTER_SWORD);
-                    }).noScrollbar().build());
+                    }).build());
     public static final ItemGroup TLOW_ITEMS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TheLegendOfWiiU.MOD_ID, "tlow_items"),
             FabricItemGroup.builder().displayName(Text.translatable("tab.the_legend_of_wiiu.tlow_items"))
@@ -36,14 +36,18 @@ public class TLOWCreativeModeTabs {
                         entries.add(ItemInit.THE_MASTER_SWORD);
                         entries.add(ItemInit.THE_AWAKENED_MASTER_SWORD);
                         entries.add(ItemInit.MAJORAS_MASK);
-                    }).noScrollbar().build());
+                        entries.add(BlockInit.EXAMPLE_BLOCK);
+                        entries.add(BlockInit.RUPEE_POT);
+                        entries.add(BlockInit.PED_WITH_MS);
+                    }).build());
     public static final ItemGroup TLOW_BLOCKS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TheLegendOfWiiU.MOD_ID, "tlow_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("tab.the_legend_of_wiiu.tlow_blocks"))
                     .icon(() -> new ItemStack(BlockInit.EXAMPLE_BLOCK)).entries((displayContext, entries) -> {
                         entries.add(BlockInit.EXAMPLE_BLOCK);
                         entries.add(BlockInit.PED_WITH_MS);
-                    }).noScrollbar().build());
+                        entries.add(BlockInit.RUPEE_POT);
+                    }).build());
 
     public static void registerItemGroups() {
         TheLegendOfWiiU.LOGGER.info(TheLegendOfWiiU.MOD_ID + " has registered its' Creative Mode Tabs.");

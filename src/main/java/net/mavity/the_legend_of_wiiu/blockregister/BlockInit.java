@@ -4,7 +4,9 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.mavity.the_legend_of_wiiu.TheLegendOfWiiU;
 import net.mavity.the_legend_of_wiiu.blockregister.blocktyperegister.CrashType;
+import net.mavity.the_legend_of_wiiu.blockregister.blocktyperegister.PotType;
 import net.minecraft.block.Block;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -17,6 +19,8 @@ public class BlockInit {
             new CrashType(FabricBlockSettings.create().noCollision().notSolid()));
     public static final Block PED_WITH_MS = registerBlock("ped_with_ms",
             new Block(FabricBlockSettings.create().nonOpaque()));
+    public static final Block RUPEE_POT = registerBlock("rupee_pot",
+            new PotType(FabricBlockSettings.create().nonOpaque().breakInstantly().pistonBehavior(PistonBehavior.DESTROY)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

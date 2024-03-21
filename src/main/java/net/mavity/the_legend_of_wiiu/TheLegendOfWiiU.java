@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.mavity.the_legend_of_wiiu.blockregister.BlockInit;
 import net.mavity.the_legend_of_wiiu.blockregister.blocktyperegister.CrashType;
+import net.mavity.the_legend_of_wiiu.blockregister.blocktyperegister.PotType;
 import net.mavity.the_legend_of_wiiu.itemregister.ItemInit;
 import net.mavity.the_legend_of_wiiu.other.TLOWCreativeModeTabs;
 import net.mavity.the_legend_of_wiiu.propertymanager.TLOWProperties;
@@ -31,5 +32,6 @@ public class TheLegendOfWiiU implements ModInitializer {
 		TLOWProperties.registerPropertiesEvent();
 		TheLegendOfWiiUClient.registerTLOWClient();
 		TheLegendOfWiiUDataGenerator.registerTLOWDataGen();
+		PotType.registerPotType();
 	}
 }

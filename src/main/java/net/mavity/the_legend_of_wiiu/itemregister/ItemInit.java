@@ -34,7 +34,6 @@ public class ItemInit {
         entries.add(BlockInit.EXAMPLE_BLOCK);
         entries.add(BlockInit.PED_WITH_MS);
     }
-
     public static final Item GREEN_RUPEE = registerItem("green_rupee", new Item(TLOWProperties.RUPEETYPE));
     public static final Item BLUE_RUPEE = registerItem("blue_rupee", new Item(TLOWProperties.RUPEETYPE));
     public static final Item YELLOW_RUPEE = registerItem("yellow_rupee", new Item(TLOWProperties.RUPEETYPE));
