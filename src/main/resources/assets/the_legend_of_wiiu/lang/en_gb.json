@@ -19,5 +19,6 @@
   "item.the_legend_of_wiiu.the_awakened_master_sword": "§6§lThe Awakened Master Sword",
   "item.the_legend_of_wiiu.majoras_mask": "§4§lMajora's Mask",
   "item.the_legend_of_wiiu.wiiu": "§lWii§r§b§lU",
-  "block.the_legend_of_wiiu.rupee_pot": "Rupee Pot"
+  "block.the_legend_of_wiiu.rupee_pot": "Rupee Pot",
+  "tooltip.the_legend_of_wiiu.goldrupeetype": "Shh... it's a secret to everybody"
 }

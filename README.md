@@ -1,3 +1,3 @@
-The Legend Of WiiU Fabric
+The Legend Of WiiU
 ========
-Note to me: put stuff here later lmfao
+A Zelda mod for Minecraft 1.20.1, still a work in progress so please report any bugs you find!

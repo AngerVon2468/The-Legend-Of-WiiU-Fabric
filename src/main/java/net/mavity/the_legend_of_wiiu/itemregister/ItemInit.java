@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.mavity.the_legend_of_wiiu.TheLegendOfWiiU;
 import net.mavity.the_legend_of_wiiu.blockregister.BlockInit;
+import net.mavity.the_legend_of_wiiu.itemregister.itemtyperegister.GoldRupeeType;
 import net.mavity.the_legend_of_wiiu.propertymanager.TLOWProperties;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -33,6 +34,7 @@ public class ItemInit {
     private static void addBuildingBlocksTabMethod(FabricItemGroupEntries entries) {
         entries.add(BlockInit.EXAMPLE_BLOCK);
         entries.add(BlockInit.PED_WITH_MS);
+        entries.add(BlockInit.RUPEE_POT);
     }
     public static final Item GREEN_RUPEE = registerItem("green_rupee", new Item(TLOWProperties.RUPEETYPE));
     public static final Item BLUE_RUPEE = registerItem("blue_rupee", new Item(TLOWProperties.RUPEETYPE));
@@ -40,7 +42,7 @@ public class ItemInit {
     public static final Item RED_RUPEE = registerItem("red_rupee", new Item(TLOWProperties.RUPEETYPE));
     public static final Item PURPLE_RUPEE = registerItem("purple_rupee", new Item(TLOWProperties.RUPEETYPE));
     public static final Item SILVER_RUPEE = registerItem("silver_rupee", new Item(TLOWProperties.RUPEETYPE));
-    public static final Item GOLD_RUPEE = registerItem("gold_rupee", new Item(TLOWProperties.RUPEETYPE));
+    public static final Item GOLD_RUPEE = registerItem("gold_rupee", new GoldRupeeType(TLOWProperties.RUPEETYPE));
     public static final Item THE_WIIU = registerItem("wiiu", new Item(TLOWProperties.RUPEETYPE));
     public static final Item ROYAL_GUARDS_SWORD = registerItem("royal_guards_sword",
             new SwordItem(ToolMaterials.WOOD, 7, -2.4f, new FabricItemSettings().maxDamage(64)));
