@@ -17,8 +17,7 @@ public class BlockInit {
     //testing to see if I can register a block or not
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
             new CrashType(FabricBlockSettings.create().noCollision().notSolid()));
-    public static final Block PED_WITH_MS = registerBlock("ped_with_ms",
-            new Block(FabricBlockSettings.create().nonOpaque()));
+
     public static final Block RUPEE_POT = registerBlock("rupee_pot",
             new PotType(FabricBlockSettings.create().nonOpaque().breakInstantly().pistonBehavior(PistonBehavior.DESTROY)));
 
